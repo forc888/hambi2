@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>H A MbI Bár :()</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/main.js"></script>
+	<link rel="icon" type="image/png" href="pics/favicon.png">
+</head>
+
+<body>
+
+	<nav>
+		<!--
+	a mobilos navigációt kapcsolgató csekbox
+	a csekboxot eltüntetjük
+	a három <span> tag a hamburger ikont fogja megvalósítani
+	-->
+		<label for="mobile-menu" class="mobile-menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+		<input type="checkbox" id="mobile-menu">
+
+		<!--
+	a navigáció elemei, melyből az első <li> kivételével
+	mindent eltüntetünk mobilnézetben
+	-->
+		<ul class="navigation">
+			<li> H A MbI Bár</li>
+			<li><a href=""><i class="bi bi-house"></i> FŐOLDAL</a></li>
+			<li><a href="action.html"><i class="bi bi-tag"></i> Akciók</a></li>
+			<li><a href="order.html"><i class="bi bi-basket"></i> Rendelés</a></li>
+			<li><a href="contact.html"><i class="bi bi-person-rolodex"></i> Elérhetőség</a></li>
+			<li><a href="admin.html">Admin <i class="bi bi-person-fill"></i></a></li>
+		</ul>
+	</nav>
+
+
+	<div class="wrapper">
+
+		<div class="intro">
+			<h2>H A MbI</h2>
+			<img src="pics/intro.jpg" alt="Intro">
+			<p> <a href="https://hamburger.blog.hu/">Hamburger.blog oldalról idézem:
+					hamburger.blog.hu</a>
+				"az első Hamburgert, abban a formában, ahogy most is esszük, tehát
+				zsömlében és nem kenyérben, egy bizonyos Oscar Weber Bilby készítette 1891-ben, Tulsa városban,
+				Oklahomában. Mások két kenyérszelet között kínáltak hasonlót. 1933-ban meg is nyitották ugyanitt a saját
+				hamburgerezőjüket, mely a Weber's Superior Root Beer Stand nevet kapta. Mindent sajátkezűleg gyártottak,
+				a steaket, zsemlét és a gyökérsört is. Még ma is ugyanazt a grillt használják, amin korábban az első
+				hamburgert sütötték, azzal a különbséggel, hogy fa üzemről gázosra építették át.
+
+				1904-ben, a St. Louisban rendezett világkiállításon lehetett elsőként ilyen szendvicseket kapni, bár
+				akkor még az -er végződés nélkül, szimplán csak Hamburg-nak hívták őket. Egyes történetek szerint ez is
+				Bilby bácsi konyhájából került ki."</p>
+		</div>
+
+		<h2>Választék</h2>
+
+		<!--
+	a .box-wrapper egy flexbox konténer
+	-->
+		<div class="box-wrapper">
+			<!--
+		a .box-ok pedig flexbox item-ek
+		-->
+			<div class="box">
+				<img src="pics/image1.jpg" alt="Big">
+				<div class="box-content">
+					<h3>Big Bro burger</h3>
+					<p>óriás buci, 2db 45dkg-os marhahúspogácsa, jégsaláta, paradicsom, hagyma, bacon, sajt,
+						hamburgerszósz</p><br>
+					<h4>4 300 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="pics/image2.jpg" alt="Heart">
+				<div class="box-content">
+					<h3>Heart attack burger</h3>
+					<p>buci, marhahúspogácsa, lassú tűzön füstölt BBQ pulled pork, sült marhaszegy, bacon, cheddar
+						szósz, panko morzsában panírozott cheddar sajt</p>
+					<h4>3 400 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="pics/image3.jpg" alt="Blue">
+				<div class="box-content">
+					<h3>Blue Lagoune burger</h3>
+					<p>buci, 15dkg-os marhahús, rukkola, paradicsom, lilahagyma, grillezett körte, edami sajt, kéksajtos
+						öntet választható bucival, választható húspogácsávalt</p>
+					<h4>2 300 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="pics/image4.jpg" alt="Tigrisrákos">
+				<div class="box-content">
+					<h3>Tigrisrákos burger</h3>
+					<p>buci, 15dkg-os marhahús, pirított tigrisrák, lollo rosso saláta, paradicsom, pirított hagyma,
+						fokhagymás-édes chiliszósz választható bucival, választható húspogácsával</p>
+					<h4>3 300 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="pics/image5.jpg" alt="Smokey">
+				<div class="box-content">
+					<h3>Smokey Salmon burger</h3>
+					<p>fekete buci, füstölt lazac, rukkola, paradicsom, mediterrán szósz, majonézes céklasaláta
+						választható bucival</p><br>
+					<h4>2 800 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+			<div class="box">
+				<img src="pics/image6.jpg" alt="Kézműves">
+				<div class="box-content">
+					<h3>Kézműves</h3>
+					<p>buci, 18 dkg marhahús, alapszósz, római saláta,jalapeño szósz, cheddar, bacon, jalapeño karikák
+					</p><br>
+					<h4>4 500 Ft</h4>
+					<a class="btn" href="">allergének</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="cookie-accept" id="cookie">
+			<a href="#">Cookie szabályzatot ide kattintva olvashatod.</a>
+			<button id="myBtn" onclick="klikk()">Elfogadom</button>
+		</div>
+	</div>
+
+</body>
+
+</html>
