@@ -7,15 +7,16 @@
 
 html {
 	font-size: 16px;
+	height: 100%;
 }
 
 body {
-	background: antiquewhite;
 	font-family: 'Kalam', cursive;
 	margin: 0 auto;
 	border: 0px;
 	padding: 0px;
-
+	background-image: url("../pics/bckgd.jpg");
+	background-attachment: fixed;
 }
 
 img {
@@ -28,13 +29,14 @@ a {
 }
 
 h2 {
+	display:inline;
 	font-size: 3rem;
 	margin: 0;
 	font-weight: 300;
 }
 
 nav {
-	background: #866032;
+	background: rgb(134, 96, 50);
 	position: sticky;
 	top: 0;
 	font-family: 'Roboto', sans-serif;
@@ -85,14 +87,69 @@ nav ul li a:hover {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
-	width: 90%;
+	padding: 0px 40px;
+	width: 95%;
+	background: rgba(250, 235, 215, .9);
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	}
+
+table {
+	margin: 50px;
+	min-width: 90%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td {
+	padding: 10px 15px;
+	background: white;
+	transition: all .3s
+}
+
+table th {
+	padding: 15px;
+	background: rgb(134, 96, 50);
+	color: white;
+	text-align: left;
+}
+
+table tr:nth-child(odd) td {
+	background: #ddd
+}
+
+table tr td:nth-child(4) {
+	text-align: right;
+	text-decoration: line-through;
+	white-space: nowrap
+}
+
+table tr td:last-child {
+	text-align: right;
+	color: #ff6e6e;
+	font-weight: 700;
+	white-space: nowrap
+}
+
+
+table tr:not(:first-child):hover td {
+	background: rgba(255, 255, 100, .8);
+	color: red;
 }
 
 .intro {
 	line-height: 1.7;
 	font-size: 1.2rem;
-	margin: 5rem 0
-}
+	margin: 5rem 0;
+	}
 
 .intro p {
 	margin: 0 0 1rem 0;
@@ -102,24 +159,26 @@ nav ul li a:hover {
 .cim {
 	display: flexbox;
 	float: left;
+	background: rgba(250, 235, 215, .9);
+	border-radius: 5%;
+	padding: 35px 30px;
 }
 
 iframe {
 	display: flexbox;
 	float: right;
 	margin: 0 0 2rem 2rem;
-	border-radius: 10%;
+	border-radius: 5%;
 	width: 35rem;
 }
 
 .ido {
 	display: flexbox;
-	background-color: rgba(213, 206, 109, 0.832);
 	margin: 0px;
 	padding: 10px;
 	text-align: center;
 	position: fixed;
-	top: 80px;
+	bottom: 40px;
 	right: 0px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -127,7 +186,7 @@ iframe {
 
 .intro img {
 	float: right;
-	margin: 0 0 5rem 5rem;
+	margin: 40px 0 1rem 5rem;
 	border-radius: 40%;
 	width: 20rem;
 }
@@ -139,7 +198,7 @@ iframe {
 	margin: 0 0 2rem 0
 }
 
-@media(max-width:800px) {
+@media(max-width:850px) {
 	.intro {
 		margin: 2rem 0
 	}
@@ -156,7 +215,7 @@ iframe {
 }
 
 .box {
-	flex: 1;
+	flex:0%;
 	margin: 10px;
 	min-width: 300px;
 	background: white;
@@ -264,10 +323,8 @@ eltüntetjük, kivéve az elsőt
 }
 
 
-/*
-ha a kijelző mérete legfeljebb 800px széles
-*/
-@media(max-width:800px) {
+
+@media(max-width:850px) {
 	.mobile-menu-button {
 		display: block
 	}
