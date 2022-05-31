@@ -9,7 +9,7 @@
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<script src="js/main.js"></script>
+
 	<link rel="icon" type="image/png" href="pics/favicon.png">
 </head>
 
@@ -31,36 +31,62 @@
 		</ul>
 	</nav>
 
+
+	<div class="form-control">
+
+		<section>
+			<form id="user-form">
+				<h1 name='cimsor'>Felhasználó hozzáadása</h1>
+
+				<div class="message"></div>
+
+				<div>
+					<label for="name">Név:</label>
+					<input type="text" id="name">
+				</div>
+
+				<div>
+					<label for="email">Email:</label>
+					<input type="text" id="email">
+				</div>
+
+				<input class="button" type="submit" value="submit">
+			</form>
+		</section>
+	</div>
+
 	<div class="container">
-		<table>
-			<tr>
+		<table id="userTable">
+			<tr class="userlist">
 				<th>id</th>
 				<th>name</th>
 				<th>email</th>
 				<th></th>
 				<th></th>
 			</tr>
-			<tr>
-				<td></td>
-				<td>Don Johnson</td>
-				<td>don.johnson@remil.com</td>
-				<td><button type="button" class="btn btn-danger btn-sm">DELETE</button></td>
-				<td><button type="button" class="btn btn-success btn-sm">Success</button></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>Billy Bandit</td>
-				<td>billy69@cemil.com</td>
-				<td><button type="button" class="btn btn-danger btn-sm">DELETE</button></td>
-				<td><button type="button" class="btn btn-success btn-sm">Success</button></td>
-			</tr>
+			<tbody>
+				<tr class="userlist">
+					<td></td>
+					<td>Don Johnson</td>
+					<td>don.johnson@remil.com</td>
+					<td><button type="button" class="btn btn-danger btn-sm">DELETE</button></td>
+					<td><button type="button" class="btn btn-success btn-sm">Success</button></td>
+				</tr>
+			</tbody>
 		</table>
+
 
 		<div class="cookie-accept" id="cookie">
 			<a href="#">Cookie szabályzatot ide kattintva olvashatod.</a>
 			<button id="myBtn" onclick="klikk()">Elfogadom</button>
 		</div>
 	</div>
+
+	<script src="js/main.js"></script>
+	<script src="js/tabla.js"></script>
+	<script src="js/user.js"></script>
+
+
 </body>
 
 </html>
