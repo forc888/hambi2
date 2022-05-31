@@ -21,18 +21,15 @@ function onSubmit(ev) {
         clearError();
     }
     else {
-         .innerHTML += '<td></td><td></td><td><button type="button" class="btn btn-danger btn-sm">DELETE</button></td><td><button type="button" class="btn btn-success btn-sm">Success</button></td>'
-        
         const tr = document.createElement('tr');
         const td = document.createElement('td');
 
-       
         td.appendChild(document.createTextNode(`${nameInput.value} (${emailInput.value})`));
 
         tr.appendChild(td);
-        
+
         userList.appendChild(tr);
-       
+
         nameInput.value = '';
         emailInput.value = '';
     }

@@ -1,15 +1,6 @@
 function tabla() {
 
-    let users = [
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-        { name: "Jhon", email: "sdffsd@wefew.kf" },
-    ]
+  
 
     let tableBody = document.querySelector("#userTable tbody");
     let createTD = (html, parent) => {
